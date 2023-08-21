@@ -163,7 +163,8 @@ def save_model(model, optimizer, opt, epoch, save_file):
     torch.save(state, save_file)
     del state
 
-def output_state(model,batch_size,epochs):
-    output_string='model='+str(model)+'_'+'batch_size='+str(batch_size)+'_'+'epochs='+str(epochs)
+def output_state(model,batch_size,epochs,learning_rate='df0.05',momentum='df0.9',temp='df0.07'):
+    output_string='model='+str(model)+'_'+'batch_size='+str(batch_size)+'_'+'epochs='+str(epochs)+'_'+'learning_rate='+str(learning_rate)+'_'+'momentum='+str(momentum)+'_'+'temp='+str(temp)
+    
     #print(output_string)
     return output_string
