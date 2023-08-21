@@ -140,7 +140,7 @@ def main():
     save_model(model, optimizer, opt, opt.epochs, save_file)
 
     global output_csv_name
-    output_csv_name=output_state(opt.model,opt.batch_size,opt.epochs)
+    output_csv_name=output_state(opt.model,opt.batch_size,opt.epochs,opt.learning_rate,opt.momentum,opt.temp)
 
     ###edited by dd
     txt_file_path = '/kaggle/working/output_csv_name.txt'
