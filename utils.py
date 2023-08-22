@@ -164,7 +164,7 @@ def save_model(model, optimizer, opt, epoch, save_file):
     del state
 
 def output_state(model,batch_size,epochs,learning_rate='df0.05',momentum='df0.9',temp='df0.07'):
-    output_string='model='+str(model)+'batch_size='+str(batch_size)+'epochs='+str(epochs)+'learning_rate='+str(learning_rate)+'momentum='+str(momentum)+'temp='+str(temp)
+    output_string='model='+str(model)+'epochs='+str(epochs)+'batch_size='+str(batch_size)+'learning_rate='+str(learning_rate)+'momentum='+str(momentum)+'temp='+str(temp)
     
     #print(output_string)
     return output_string
